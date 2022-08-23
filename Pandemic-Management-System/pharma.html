@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            Body {
+                font-family: Calibri, Helvetica, sans-serif;
+                background-color: lighter red;
+            }
+    
+            button {
+                background-color: #000000;
+                width: auto;
+                color: rgb(255, 255, 255);
+                padding: 10px 18px;
+                margin: 10px 5px;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+    
+            form {
+                border: 20px solid #f1f1f1;
+            }
+    
+    
+            input[type=text],
+            input[type=password] {
+                height: 30px;
+                width: 23%;
+                margin: 8px 0;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px lighter navy blue;
+                box-sizing: border-box;
+               
+            }
+    
+    
+    
+            button:hover {
+                opacity: 0.7;
+            }
+    
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                margin: 10px 5px;
+            }
+    
+    
+            .container {
+                padding: 100px;
+                background-color: white;
+                text-align: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    
+            }
+        </style>
+    </head>
+
+<body>
+    <center>
+        <h1>Pharmacy Information</h1>
+        <h4>Developed by WHOAREWE</h4>
+    </center>
+<form method="post" action="pharma.php">
+    <div style="position: center;" class="container">
+        <h3> Please insert the following information </h3>
+
+<!-- Pharmacy name -->
+<label>Pharmacy Name:</label>
+<input type="text" placeholder="Enter the pharmacy name" name="name" required><br>
+
+<!-- Address -->
+<label>Address:</label>
+<input type="text" placeholder="Enter the Address" name="area" required><br>
+
+<!-- Contact No -->
+<label>Contact No: </label>
+<input type="text" placeholder="Enter the Contact No" name="contact" required><br>
+
+<!-- Pharmacist Name -->
+<label>Pharmacist Name:</label>
+<input type="text" placeholder="Enter the pharmacist name" name="pharmacist" required><br>
+
+<!-- timing status -->
+<label>Timing status: </label>
+<input type="text" placeholder="(24/7)/(9AM-12PM)" name="timing" required><br>
+
+<button>Submit</button>
+
+</div>
+</form>
+</body>
+</html>

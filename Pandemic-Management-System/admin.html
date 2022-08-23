@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            Body {
+                font-family: Calibri, Helvetica, sans-serif;
+                background-color: lighter rgb(93, 71, 71);
+            }
+    
+            button {
+
+                background-color: #000000;
+                width: auto;
+                color: white;
+                padding: 10px 18px;
+                margin: 10px 5px;
+                border: rgb(252, 5, 5);
+                border-radius: 30px;
+                cursor: pointer;
+            }
+    
+    
+            input[type=text],
+            input[type=password] {
+                height: 30px;
+                width: 23%;
+                margin: 8px 0;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px lighter navy blue;
+                box-sizing: border-box;
+               
+            }
+    
+    
+    
+            button:hover {
+                opacity: 0.7;
+            }
+    
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                margin: 10px 5px;
+            }
+    
+    
+            .container {
+                padding: 100px;
+                background-color: rgb(175, 21, 21);
+                text-align: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    
+            }
+        </style>
+    </head>
+
+<body>
+    <center>
+        <h1>Admin Control Panel</h1>
+        <h2>Pandemic Management System</h2>
+        <center><h3>Developed by WHOAREWE</h3> </center>
+    <p>You can input the valuable information by clicking the buttons below - </p>
+        <button onclick="location.href='home.html'">HOME</button>
+        <button onclick="location.href='icu.html'">ICU</button>
+        <button onclick="location.href='blood.html'">Blood Bank</button>
+        <button onclick="location.href='pharma.html'">Pharmacy</button>
+    </center>
+
+
+
+<br><br><br>
+
+
+<!-- Slide Show pictues -->
+<section>
+    <center>
+    <img class="mySlides" src="edoctor.jpeg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="icu.jpg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="bloodbank.jpg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="pharma.jpeg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="vaccine.jpg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="pandemic.png"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="corona.gif"
+    style="width: 800px" height="600px">
+</center>
+  </section>
+  
+  <!-- Website Description -->
+  
+  <h1>About Our System</h2>
+    
+
+        <h3>
+            I. E-Doctor:
+            Here, you will find the symptoms of the Virus (Coronavirus), its primary treatment and
+            the necessary steps that should be taken.
+            <br>
+            
+            II. ICU:
+            Here, you will be able to find the total number of ICU list and its Hospital name, Location,
+            Tele-phone numbers and the vacancy list.
+            <br>
+    
+            III. Blood Bank:
+            Here, you will be able to find the total number of the blood donor list and their name,
+            Location, Contact numbers and past date of donation.
+            <br>
+            
+            IV. Medicine Facilities:
+            Here, you will find the Name list of medical stores that provides door to door service,
+            Location (branch) and their Cell numbers.
+            <br>
+            
+            V. Vaccination:
+            You can get to know about vaccine availability.
+            <br>
+            
+            VI. Pandemic Updates:
+            It will keep you updated about the number of people affected people, recovery rate and
+            the death rate per day.
+            <br>
+        </h3>
+
+  
+  <script>
+  
+  // Automatic Slideshow - change image every 3 seconds
+  
+  var myIndex = 0;
+  
+  carousel();
+  
+  function carousel() 
+  {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+  
+    for (i = 0; i < x.length; i++) 
+    {
+      x[i].style.display = "none";
+    }
+  
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            Body {
+                font-family: Calibri, Helvetica, sans-serif;
+                background-color: lighter rgb(93, 71, 71);
+            }
+    
+            button {
+
+                background-color: #000000;
+                width: auto;
+                color: white;
+                padding: 10px 18px;
+                margin: 10px 5px;
+                border: rgb(252, 5, 5);
+                border-radius: 30px;
+                cursor: pointer;
+            }
+    
+    
+            input[type=text],
+            input[type=password] {
+                height: 30px;
+                width: 23%;
+                margin: 8px 0;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px lighter navy blue;
+                box-sizing: border-box;
+               
+            }
+    
+    
+    
+            button:hover {
+                opacity: 0.7;
+            }
+    
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                margin: 10px 5px;
+            }
+    
+    
+            .container {
+                padding: 100px;
+                background-color: rgb(175, 21, 21);
+                text-align: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    
+            }
+        </style>
+    </head>
+
+<body>
+    <center>
+        <h1>Welcome to Pandemic Management System</h1>
+        <p>Developed By WHOAREWE</p>
+    </center>
+    <br>
+
+    <center>
+        <button onclick="location.href='https://ourfreedoctor.com/'">E-Doctor</button>
+        <button onclick="location.href='icu_show.php'">ICU</button>
+        <button onclick="location.href='blood_show.php'">Blood Bank</button>
+        <button onclick="location.href='pharma_show.php'">Pharmacy</button>
+        <button onclick="location.href='https://surokkha.gov.bd/'">Vaccination</button>
+        <button onclick="location.href='https://www.worldometers.info/coronavirus/'">Pandemic Update</button>
+        <button onclick="location.href='form.html'">Admin Login</button>
+    </center>
+
+
+
+<br><br><br>
+
+
+<!-- Slide Show pictues -->
+<section>
+    <center>
+    <img class="mySlides" src="edoctor.jpeg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="icu.jpg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="bloodbank.jpg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="pharma.jpeg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="vaccine.jpg"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="pandemic.png"
+    style="width: 1000px" height="500px">
+    <img class="mySlides" src="corona.gif"
+    style="width: 800px" height="600px">
+</center>
+  </section>
+  
+  <!-- Website Description -->
+  
+  <h1>About Our System</h2>
+    
+
+        <h3>
+            Basically, this website is about managing any kind of pandemic that can happen in the world.
+            But for now due to the current Covid-19 pandemic we will be focusing on that. To manage
+            any kind of Pandemic we need some basic element. Those are mentioned below as features of
+            our project. Here, anyone can find ICU, Medical Facilities, Blood Bank, Vaccine Details, E
+            Doctor and can stay up to date about the pandemic's current situation.
+            This system interface will be user friendly and easily accessible.
+            <br>
+        </h3>
+
+  
+  <script>
+  
+  // Automatic Slideshow - change image every 3 seconds
+  
+  var myIndex = 0;
+  
+  carousel();
+  
+  function carousel() 
+  {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+  
+    for (i = 0; i < x.length; i++) 
+    {
+      x[i].style.display = "none";
+    }
+  
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+</body>
+</html>
